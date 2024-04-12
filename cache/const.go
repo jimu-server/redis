@@ -4,7 +4,7 @@ import "time"
 
 const (
 	// Prefix 缓存前缀
-	Prefix = "app"
+	Prefix = "jimuos"
 	// Separator 缓存分隔符
 	Separator = ":"
 
