@@ -16,4 +16,7 @@ const (
 
 	// PhoneCodeTime 短信验证码登录时长
 	PhoneCodeTime = 30 * time.Second
+
+	EmailVerifyKey      = Prefix + Separator + "email_verify"
+	EmailVerifyCodeTime = 30 * time.Minute
 )
