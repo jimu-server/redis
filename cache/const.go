@@ -13,10 +13,11 @@ const (
 
 	// PhoneSecureKey 更换手机绑定验证码key
 	PhoneSecureKey = Prefix + Separator + "phone_secure"
-
 	// PhoneCodeTime 短信验证码登录时长
 	PhoneCodeTime = 30 * time.Second
 
-	EmailVerifyKey      = Prefix + Separator + "email_verify"
+	// EmailVerifyKey  邮箱绑定验证缓存key
+	EmailVerifyKey = Prefix + Separator + "email_verify"
+	// EmailVerifyCodeTime 邮箱验证码缓存时长
 	EmailVerifyCodeTime = 30 * time.Minute
 )

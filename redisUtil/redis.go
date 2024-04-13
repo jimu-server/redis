@@ -37,6 +37,10 @@ func Get(key string) (string, error) {
 	return get(key)
 }
 
+func Del(key string) error {
+	return del(key)
+}
+
 func setSetEx(key string, value any, expiration time.Duration) error {
 	var buffer []byte
 	v := ""
@@ -61,4 +65,9 @@ func get(key string) (string, error) {
 		return "", cmd.Err()
 	}
 	return cmd.Val(), nil
+}
+
+func del(key string) error {
+	cmd := client.Del(context.Background(), key)
+	return cmd.Err()
 }
