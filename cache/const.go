@@ -21,4 +21,6 @@ const (
 	EmailVerifyKey = Prefix + Separator + "email_verify" + Separator
 	// EmailVerifyCodeTime 邮箱验证码缓存时长
 	EmailVerifyCodeTime = 30 * time.Minute
+
+	SettingCacheTime = 30 * time.Minute
 )
